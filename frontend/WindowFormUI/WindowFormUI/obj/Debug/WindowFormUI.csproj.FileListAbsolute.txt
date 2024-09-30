@@ -1,0 +1,15 @@
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\bin\Debug\WindowFormUI.exe.config
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\bin\Debug\WindowFormUI.exe
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\bin\Debug\WindowFormUI.pdb
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\bin\Debug\FontAwesome.Sharp.dll
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\bin\Debug\Guna.UI2.dll
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.csproj.AssemblyReference.cache
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.ClassDashboard.resources
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.Home.resources
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.LoginForm.resources
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.Properties.Resources.resources
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.csproj.GenerateResource.cache
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.csproj.CoreCompileInputs.cache
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFo.EC2D8E22.Up2Date
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.exe
+D:\Bo\C# UI\frontend\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.pdb
