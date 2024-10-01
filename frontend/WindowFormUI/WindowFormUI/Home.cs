@@ -70,16 +70,6 @@ namespace WindowFormUI
             guna2Panel5.Visible = false;
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-     
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void iconButton5_Click(object sender, EventArgs e)
         {
 
@@ -103,6 +93,50 @@ namespace WindowFormUI
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2Panel1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ClassDashboard cd = new ClassDashboard();
+            cd.ShowDialog();
+            this.Close();
+        }
+
+        private void guna2Panel2_MouseHover(object sender, EventArgs e)
+        {
+            guna2Panel2.FillColor = System.Drawing.Color.WhiteSmoke;
+            guna2Panel5.Visible = true;
+        }
+
+        private void guna2Panel2_MouseLeave(object sender, EventArgs e)
+        {
+            guna2Panel2.FillColor = System.Drawing.Color.White;
+            guna2Panel5.Visible = false;
+        }
+
+        private void guna2Panel3_MouseHover(object sender, EventArgs e)
+        {
+            guna2Panel3.FillColor = System.Drawing.Color.WhiteSmoke;
+            guna2Panel5.Visible = true;
+        }
+
+        private void guna2Panel3_MouseLeave(object sender, EventArgs e)
+        {
+            guna2Panel3.FillColor = System.Drawing.Color.White;
+            guna2Panel5.Visible = false;
+        }
+
+        private void guna2Panel4_MouseHover(object sender, EventArgs e)
+        {
+            guna2Panel4.FillColor = System.Drawing.Color.WhiteSmoke;
+            guna2Panel5.Visible = true;
+        }
+
+        private void guna2Panel4_MouseLeave(object sender, EventArgs e)
+        {
+            guna2Panel4.FillColor = System.Drawing.Color.White;
+            guna2Panel5.Visible = false;
         }
     }
 }

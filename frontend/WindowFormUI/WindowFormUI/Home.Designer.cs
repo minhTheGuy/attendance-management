@@ -360,6 +360,7 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(963, 100);
             this.guna2Panel1.TabIndex = 43;
+            this.guna2Panel1.Click += new System.EventHandler(this.guna2Panel1_Click);
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             this.guna2Panel1.MouseLeave += new System.EventHandler(this.guna2Panel1_MouseLeave);
             this.guna2Panel1.MouseHover += new System.EventHandler(this.guna2Panel1_MouseHover);
@@ -812,6 +813,8 @@
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(963, 100);
             this.guna2Panel4.TabIndex = 46;
+            this.guna2Panel4.MouseLeave += new System.EventHandler(this.guna2Panel4_MouseLeave);
+            this.guna2Panel4.MouseHover += new System.EventHandler(this.guna2Panel4_MouseHover);
             // 
             // label15
             // 
@@ -934,6 +937,8 @@
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(963, 100);
             this.guna2Panel3.TabIndex = 45;
+            this.guna2Panel3.MouseLeave += new System.EventHandler(this.guna2Panel3_MouseLeave);
+            this.guna2Panel3.MouseHover += new System.EventHandler(this.guna2Panel3_MouseHover);
             // 
             // guna2Panel2
             // 
@@ -952,6 +957,8 @@
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(963, 100);
             this.guna2Panel2.TabIndex = 50;
+            this.guna2Panel2.MouseLeave += new System.EventHandler(this.guna2Panel2_MouseLeave);
+            this.guna2Panel2.MouseHover += new System.EventHandler(this.guna2Panel2_MouseHover);
             // 
             // label1
             // 
