@@ -50,7 +50,7 @@
             this.label1.Font = new System.Drawing.Font("Roboto", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(188, 168);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 57);
+            this.label1.Size = new System.Drawing.Size(419, 71);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome Back";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -61,7 +61,7 @@
             this.label2.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(198, 262);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(106, 27);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tài khoản";
             // 
@@ -71,7 +71,7 @@
             this.label3.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(198, 356);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
+            this.label3.Size = new System.Drawing.Size(102, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mật khẩu";
             // 
@@ -98,7 +98,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(74)))), ((int)(((byte)(233)))));
             this.label4.Location = new System.Drawing.Point(467, 441);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 18);
+            this.label4.Size = new System.Drawing.Size(145, 23);
             this.label4.TabIndex = 7;
             this.label4.Text = "Quên mật khẩu?";
             // 
@@ -108,7 +108,7 @@
             this.label5.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(195, 546);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 18);
+            this.label5.Size = new System.Drawing.Size(206, 23);
             this.label5.TabIndex = 8;
             this.label5.Text = "Bạn chưa có tài khoản?";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -120,7 +120,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(74)))), ((int)(((byte)(233)))));
             this.label6.Location = new System.Drawing.Point(365, 546);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 18);
+            this.label6.Size = new System.Drawing.Size(78, 23);
             this.label6.TabIndex = 9;
             this.label6.Text = "Đăng ký";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -143,7 +143,7 @@
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(198, 294);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(151)))), ((int)(((byte)(173)))));
@@ -171,7 +171,7 @@
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Location = new System.Drawing.Point(199, 388);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(151)))), ((int)(((byte)(173)))));
@@ -224,7 +224,7 @@
             this.iconButton2.IconColor = System.Drawing.Color.Goldenrod;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 65;
-            this.iconButton2.Location = new System.Drawing.Point(520, 164);
+            this.iconButton2.Location = new System.Drawing.Point(595, 168);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(71, 71);
             this.iconButton2.TabIndex = 13;
