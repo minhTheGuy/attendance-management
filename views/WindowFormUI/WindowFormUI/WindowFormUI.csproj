@@ -78,30 +78,29 @@
     <Compile Include="ClassView.Designer.cs">
       <DependentUpon>ClassView.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditClassForm.cs">
+    <Compile Include="Forms\EditClassForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditClassForm.Designer.cs">
+    <Compile Include="Forms\EditClassForm.Designer.cs">
       <DependentUpon>EditClassForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditSchoolForm.cs">
+    <Compile Include="Confirms\ConfirmDeletetion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>EditSchoolForm.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfirmDeletetion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfirmDeletetion.Designer.cs">
+    <Compile Include="Confirms\ConfirmDeletetion.Designer.cs">
       <DependentUpon>ConfirmDeletetion.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfirmAttendance.cs">
+    <Compile Include="Confirms\ConfirmAttendance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConfirmAttendance.Designer.cs">
+    <Compile Include="Confirms\ConfirmAttendance.Designer.cs">
       <DependentUpon>ConfirmAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditSchoolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditSchoolForm.Designer.cs">
+      <DependentUpon>EditSchoolForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -117,25 +116,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include=".Designer.resx">
-      <DependentUpon>.Designer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ClassDashboard.resx">
       <DependentUpon>ClassDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClassView.resx">
       <DependentUpon>ClassView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditClassForm.resx">
+    <EmbeddedResource Include="Forms\EditClassForm.resx">
       <DependentUpon>EditClassForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditSchoolForm.resx">
-      <DependentUpon>EditSchoolForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmDeletetion.resx">
+    <EmbeddedResource Include="Confirms\ConfirmDeletetion.resx">
       <DependentUpon>ConfirmDeletetion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmAttendance.resx">
+    <EmbeddedResource Include="Confirms\ConfirmAttendance.resx">
       <DependentUpon>ConfirmAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
@@ -169,7 +162,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="door.png" />
+    <Content Include="Resource\door.png" />
     <Content Include="Resource\address.png" />
     <Content Include="Resource\flag.png" />
     <Content Include="Resource\location.png" />

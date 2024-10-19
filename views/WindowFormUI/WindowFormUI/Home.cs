@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using WindowFormUI.Forms;
 
 namespace WindowFormUI
 {
