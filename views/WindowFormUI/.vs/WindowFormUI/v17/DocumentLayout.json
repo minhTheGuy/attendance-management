@@ -1,52 +1,60 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\editschoolform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\downloads\\attendance-management\\views\\windowformui\\windowformui\\.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\downloads\\attendance-management\\views\\windowformui\\windowformui\\editschoolform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\editschoolform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\downloads\\attendance-management\\views\\windowformui\\windowformui\\editschoolform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\editschoolform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\editclassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\editclassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\editclassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\confirmattendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\confirmattendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\confirmattendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\confirmdeletetion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\confirmdeletetion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\confirmdeletetion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\attendance-management\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\classdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\classdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\classdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\classview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\classview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\classview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\classview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\classview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\classview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\classdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\classdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\classdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|c:\\users\\admin\\source\\repos\\attendance-management\\views\\windowformui\\windowformui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\windowformui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B2154AE8-933C-453C-B3E2-776914953226}|WindowFormUI\\WindowFormUI.csproj|solutionrelative:windowformui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -57,7 +65,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,11 +77,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": ".Designer.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\.Designer.cs",
+              "DocumentIndex": 0,
+              "Title": ".Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\.Designer.cs",
               "RelativeDocumentMoniker": "WindowFormUI\\.Designer.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\.Designer.cs [Design]",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\.Designer.cs",
+              "RelativeToolTip": "WindowFormUI\\.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T02:33:43.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditSchoolForm.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditSchoolForm.cs",
+              "RelativeDocumentMoniker": "WindowFormUI\\EditSchoolForm.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditSchoolForm.cs",
+              "RelativeToolTip": "WindowFormUI\\EditSchoolForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T02:32:59.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".Designer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\.Designer.cs",
+              "RelativeDocumentMoniker": "WindowFormUI\\.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\.Designer.cs [Design]",
               "RelativeToolTip": "WindowFormUI\\.Designer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T16:23:51.386Z",
@@ -81,11 +115,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EditSchoolForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditSchoolForm.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditSchoolForm.cs",
               "RelativeDocumentMoniker": "WindowFormUI\\EditSchoolForm.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditSchoolForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditSchoolForm.cs [Design]",
               "RelativeToolTip": "WindowFormUI\\EditSchoolForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T16:23:50.116Z",
@@ -93,131 +127,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "EditClassForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditClassForm.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditClassForm.cs",
               "RelativeDocumentMoniker": "WindowFormUI\\EditClassForm.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditClassForm.cs [Design]",
-              "RelativeToolTip": "WindowFormUI\\EditClassForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\EditClassForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:23:43.883Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConfirmAttendance.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmAttendance.cs",
-              "RelativeDocumentMoniker": "WindowFormUI\\ConfirmAttendance.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmAttendance.cs [Design]",
-              "RelativeToolTip": "WindowFormUI\\ConfirmAttendance.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:23:19.452Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ConfirmDeletetion.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmDeletetion.cs",
-              "RelativeDocumentMoniker": "WindowFormUI\\ConfirmDeletetion.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmDeletetion.cs [Design]",
-              "RelativeToolTip": "WindowFormUI\\ConfirmDeletetion.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:22:39.361Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "WhenOpened": "2024-10-18T16:23:43.883Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\README.md",
-              "RelativeDocumentMoniker": "..\\..\\README.md",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\README.md",
-              "RelativeToolTip": "..\\..\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-10-18T16:21:04.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ClassDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassDashboard.cs",
-              "RelativeDocumentMoniker": "WindowFormUI\\ClassDashboard.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassDashboard.cs",
-              "RelativeToolTip": "WindowFormUI\\ClassDashboard.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAEwLoAAAAYAAAAAAAAAA==",
+              "Title": "ConfirmAttendance.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmAttendance.cs",
+              "RelativeDocumentMoniker": "WindowFormUI\\ConfirmAttendance.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmAttendance.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmAttendance.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:16:45.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ClassView.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassView.cs",
-              "RelativeDocumentMoniker": "WindowFormUI\\ClassView.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassView.cs",
-              "RelativeToolTip": "WindowFormUI\\ClassView.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAADgvycAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:16:09.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:23:19.452Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ClassDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassDashboard.cs",
-              "RelativeDocumentMoniker": "WindowFormUI\\ClassDashboard.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassDashboard.cs [Design]",
-              "RelativeToolTip": "WindowFormUI\\ClassDashboard.cs [Design]",
+              "Title": "ConfirmDeletetion.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmDeletetion.cs",
+              "RelativeDocumentMoniker": "WindowFormUI\\ConfirmDeletetion.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmDeletetion.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ConfirmDeletetion.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:14:41.534Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-18T16:22:39.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ClassView.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassView.cs",
-              "RelativeDocumentMoniker": "WindowFormUI\\ClassView.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassView.cs [Design]",
-              "RelativeToolTip": "WindowFormUI\\ClassView.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:12:45.696Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Home.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\Home.cs",
-              "RelativeDocumentMoniker": "WindowFormUI\\Home.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\Home.cs",
-              "RelativeToolTip": "WindowFormUI\\Home.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:10:36.347Z",
-              "EditorCaption": ""
+              "DocumentIndex": 7,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\README.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\attendance-management\\README.md",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\README.md",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\attendance-management\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-10-18T16:21:04.882Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "ClassDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassDashboard.cs",
+              "RelativeDocumentMoniker": "WindowFormUI\\ClassDashboard.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassDashboard.cs",
+              "RelativeToolTip": "WindowFormUI\\ClassDashboard.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAEwLoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:16:45.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClassView.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassView.cs",
+              "RelativeDocumentMoniker": "WindowFormUI\\ClassView.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassView.cs",
+              "RelativeToolTip": "WindowFormUI\\ClassView.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADgvycAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:16:09.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClassDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassDashboard.cs",
+              "RelativeDocumentMoniker": "WindowFormUI\\ClassDashboard.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassDashboard.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:14:41.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClassView.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassView.cs",
+              "RelativeDocumentMoniker": "WindowFormUI\\ClassView.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassView.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\ClassView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:12:45.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\Home.cs",
+              "RelativeDocumentMoniker": "WindowFormUI\\Home.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\Home.cs",
+              "RelativeToolTip": "WindowFormUI\\Home.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:10:36.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Home.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\Home.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\Home.cs",
               "RelativeDocumentMoniker": "WindowFormUI\\Home.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\Home.cs [Design]",
-              "RelativeToolTip": "WindowFormUI\\Home.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\attendance-management\\views\\WindowFormUI\\WindowFormUI\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:10:12.283Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-18T16:10:12.283Z"
             }
           ]
         }
