@@ -53,3 +53,6 @@ C:\Users\Admin\source\repos\attendance-management\views\WindowFormUI\WindowFormU
 C:\Users\Admin\source\repos\attendance-management\views\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.EditSchoolForm.resources
 C:\Users\Admin\source\repos\attendance-management\views\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.ConfirmDeletetion.resources
 C:\Users\Admin\source\repos\attendance-management\views\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.ConfirmAttendance.resources
+C:\Users\Admin\Downloads\attendance-management\views\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\attendance-management\views\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.exe
+C:\Users\Admin\Downloads\attendance-management\views\WindowFormUI\WindowFormUI\obj\Debug\WindowFormUI.pdb
