@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\views",
+    "\\views\\WindowFormUI",
+    "\\views\\WindowFormUI\\WindowFormUI"
   ],
-  "SelectedNode": "\\WindowFormUI.sln",
+  "SelectedNode": "\\views\\WindowFormUI\\WindowFormUI\\Home.cs",
   "PreviewInSolutionExplorer": false
 }
