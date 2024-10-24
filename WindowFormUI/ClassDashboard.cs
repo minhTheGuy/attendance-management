@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using WindowFormUI.QLDIEMDANHDataSetTableAdapters;
@@ -40,16 +36,16 @@ namespace WindowFormUI
             guna2Panel5.Visible = true;
 
             // get class from panel
-            int classId = int.Parse(panel.Controls[8].Text);
+            int classId = int.Parse(panel.Controls[9].Text);
             QLDIEMDANHDataSet.ClassRow classRow = classTableAdapter.GetData().Where(classItem => classItem.id == classId).ToList()[0];
 
-            label21.Text = classRow.ten_mon_hoc;
-            label25.Text = classRow.ma_mon;
-            label26.Text = $"{classRow.startDate} - {classRow.endDate}";
-            label47.Text = classRow.nhom;
-            label49.Text = classRow.to;
-            label51.Text = classRow.ca_hoc;
-            label53.Text = classRow.phong_hoc;
+            label23.Text = "Mã môn: " + classRow.ma_mon;
+            label25.Text = "Năm học " + $"{classRow.startDate.Year} - {classRow.endDate.Year}";
+            label46.Text = "Học kì: " + "HK1";
+            label48.Text = "Nhóm: " + classRow.nhom;
+            label50.Text = "Tổ: " + classRow.to;
+            label52.Text = "Ca học: " + classRow.ca_hoc;
+            label54.Text = "Phòng học: " + classRow.phong_hoc;
 
 
         }
@@ -65,11 +61,13 @@ namespace WindowFormUI
         {
             Label newLabel = new Label
             {
-                Text = label.Text + RandomNumberGenerator.Create(),
+                AutoSize = label.AutoSize,
                 Font = label.Font,
                 ForeColor = label.ForeColor,
                 Location = label.Location,
-                Size = label.Size
+                Name = label.Name,
+                Size = label.Size,
+                Text = label.Text
             };
             return newLabel;
         }
@@ -115,7 +113,7 @@ namespace WindowFormUI
         {
             // Get Class Id from panel
             Guna2Panel panel = (Guna2Panel)sender;
-            int classId = int.Parse(panel.Controls[8].Text);
+            int classId = int.Parse(panel.Controls[9].Text);
 
             ClassView classView = new ClassView
             {
@@ -192,6 +190,7 @@ namespace WindowFormUI
 
                 label = CloneLabel(label33);
                 label.Text = $"{classRow.ca_hoc}";
+                tempPanel.Controls.Add(label);
 
                 label = CloneLabel(label7);
                 label.Text = $"{classRow.id}";
@@ -231,7 +230,7 @@ namespace WindowFormUI
         private void ShowEditClassForm(object sender, EventArgs e)
         {
             Guna2Panel panel = (Guna2Panel)((Guna2Button)sender).Parent;
-            int classId = int.Parse(panel.Controls[8].Text);
+            int classId = int.Parse(panel.Controls[9].Text);
 
             EditClassForm classForm = new EditClassForm
             {

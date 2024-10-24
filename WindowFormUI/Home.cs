@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using WindowFormUI.Forms;
 using WindowFormUI.QLDIEMDANHDataSetTableAdapters;
+using static WindowFormUI.QLDIEMDANHDataSet;
 
 namespace WindowFormUI
 {
@@ -37,6 +38,10 @@ namespace WindowFormUI
 
         private void Mouse_Hover(object sender, EventArgs e)
         {
+            while (side_container.Controls.Count > 0)
+            {
+                side_container.Controls.RemoveAt(0);
+            }
             Guna2Panel panel = (Guna2Panel)sender;
             panel.FillColor = System.Drawing.Color.WhiteSmoke;
             guna2Panel5.Visible = true;
@@ -44,6 +49,12 @@ namespace WindowFormUI
             // get class data from the database which is related to the school
             int schoolId = int.Parse(panel.Controls[5].Text);
             var classRows = classTableAdapter.GetData().Where(classRow => classRow.school_id == schoolId).ToList();
+
+            if (classRows.Count == 0)
+            {
+                label22.Text = "0";
+                return;
+            }
 
             label22.Text = $"{classRows.Count}";
 
@@ -101,11 +112,13 @@ namespace WindowFormUI
         {
             Label newLabel = new Label
             {
-                Text = label.Text + RandomNumberGenerator.Create(),
+                AutoSize = label.AutoSize,
                 Font = label.Font,
                 ForeColor = label.ForeColor,
                 Location = label.Location,
-                Size = label.Size
+                Name = label.Name,
+                Size = label.Size,
+                Text = label.Text
             };
             return newLabel;
         }
@@ -214,6 +227,7 @@ namespace WindowFormUI
             {
                 QLDIEMDANHDataSet.SchoolRow schoolRow = schoolRows[i];
 
+
                 // clone the panel
                 Guna.UI2.WinForms.Guna2Panel panel = new Guna.UI2.WinForms.Guna2Panel
                 {
@@ -230,6 +244,14 @@ namespace WindowFormUI
                 panel.Controls.Add(label);
 
                 label = CloneLabel(label5);
+                if (schoolRow.Dia_chi.Length > 30)
+                {
+                    schoolRow.Dia_chi = $"{schoolRow.Dia_chi}".Substring(0, 30) + "...";
+                }
+                else
+                {
+                    schoolRow.Dia_chi = $"{schoolRow.Dia_chi}";
+                }
                 label.Text = $@"{schoolRow.Dia_chi}";
                 panel.Controls.Add(label);
 

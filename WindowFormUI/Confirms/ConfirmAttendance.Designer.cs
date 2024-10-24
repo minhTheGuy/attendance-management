@@ -84,6 +84,7 @@ namespace WindowFormUI
             this.guna2Button2.Size = new System.Drawing.Size(150, 39);
             this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "Điểm danh";
+            this.guna2Button2.Click += new System.EventHandler(this.Perform);
             // 
             // guna2Button1
             // 

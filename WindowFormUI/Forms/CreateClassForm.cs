@@ -43,14 +43,23 @@ namespace WindowFormUI
             {
                 try
                 {
+                    SaveFileDialog saveFileDialog = new SaveFileDialog();
+                    saveFileDialog.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm;*.csv";
+                    saveFileDialog.FileName = guna2TextBox8.Text;
+                    saveFileDialog.InitialDirectory = @"C:\Uploads";
+                    saveFileDialog.RestoreDirectory = true;
+                    saveFileDialog.Title = "Save Excel File";
+                    saveFileDialog.ShowDialog();
+
+                    if (saveFileDialog.FileName == "")
+                    {
+                        MessageBox.Show("Please select a file", "File Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
                     // copy file to ExcelFiles folder
                     string fileName = guna2TextBox8.Text;
-                    string destName = Path.Combine(@"C:\Uploads", Path.GetFileName(fileName));
-                    // if C:\Uploads folder does not exist, create it
-                    if (!Directory.Exists(@"C:\Uploads"))
-                    {
-                        Directory.CreateDirectory(@"C:\Uploads");
-                    }
+                    string destName = saveFileDialog.FileName;
                     File.Copy(fileName, destName, true);
 
                     classTableAdapter.Insert(schoolId, guna2TextBox4.Text, guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox6.Text, DateTime.Now, DateTime.Now, "Monday", "1", "B205", guna2TextBox8.Text);
