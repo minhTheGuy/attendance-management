@@ -8,6 +8,7 @@ CREATE TABLE Users (
 	email VARCHAR(50) NOT NULL,
 );
 
+
 SELECT * FROM Users;
 DELETE FROM Users;
 DROP TABLE Users;

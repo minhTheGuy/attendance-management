@@ -8,25 +8,14 @@ namespace WindowFormUI
 {
     public partial class ClassDashboard : Form
     {
-        private ClassTableAdapter classTableAdapter;
-        private int schoolId;
-        private string schoolName;
+        private readonly ClassTableAdapter classTableAdapter;
+        public static int schoolId = 0;
+        public static string schoolName = "";
 
         public ClassDashboard()
         {
             InitializeComponent();
             this.classTableAdapter = new QLDIEMDANHDataSetTableAdapters.ClassTableAdapter();
-        }
-        public int SchoolId
-        {
-            get { return schoolId; }
-            set { schoolId = value; }
-        }
-
-        public string SchoolName
-        {
-            get { return schoolName; }
-            set { schoolName = value; }
         }
 
         private void Mouse_Hover(object sender, EventArgs e)
@@ -46,8 +35,6 @@ namespace WindowFormUI
             label50.Text = "Tổ: " + classRow.to;
             label52.Text = "Ca học: " + classRow.ca_hoc;
             label54.Text = "Phòng học: " + classRow.phong_hoc;
-
-
         }
 
         private void Mouse_Leave(object sender, EventArgs e)
@@ -97,16 +84,11 @@ namespace WindowFormUI
             Guna2Panel panel = (Guna2Panel)((Guna2Button)sender).Parent;
             int classId = int.Parse(panel.Controls[8].Text);
 
-            ClassView classView = new ClassView
-            {
-                SchoolId = schoolId,
-                SchoolName = schoolName,
-                ClassId = classId,
-                ClassName = panel.Controls[0].Text
-            };
-
+            ClassView.classId = classId;
+            ClassView classView = new ClassView();
             classView.Show();
-            this.Hide();
+
+            this.Dispose();
         }
 
         private void ShowClassViewFromPanel(object sender, EventArgs e)
@@ -115,39 +97,38 @@ namespace WindowFormUI
             Guna2Panel panel = (Guna2Panel)sender;
             int classId = int.Parse(panel.Controls[9].Text);
 
-            ClassView classView = new ClassView
-            {
-                SchoolId = schoolId,
-                SchoolName = schoolName,
-                ClassId = classId,
-                ClassName = panel.Controls[0].Text
-            };
-
+            ClassView.classId = classId;
+            ClassView classView = new ClassView();
             classView.Show();
-            this.Hide();
+
+            this.Dispose();
         }
         private void GoHomepage(object sender, EventArgs e)
         {
             Home home = new Home();
             home.Show();
-            this.Hide();
+
+            this.Dispose();
         }
         private void Back(object sender, EventArgs e)
         {
             Home home = new Home();
             home.Show();
+            
             this.Dispose();
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
             label29.Text = schoolName;
+            this.Text = $"Danh sách lớp học - {schoolName}";
 
             var classes = classTableAdapter.GetData().Where(classItem => classItem.school_id == schoolId).ToList();
-         
+
             if (classes.Count == 0)
             {
                 guna2Panel2.Visible = true;
+                return;
             }
 
             for (int i = 0; i < classes.Count; i++)
@@ -169,7 +150,7 @@ namespace WindowFormUI
                 tempPanel.Controls.Add(label);
 
                 label = CloneLabel(label5);
-                label.Text = $"{classRow.startDate}";
+                label.Text = $"{classRow.startDate.Year} - {classRow.endDate.Year}";
                 tempPanel.Controls.Add(label);
 
                 label = CloneLabel(label6);
@@ -206,6 +187,7 @@ namespace WindowFormUI
                 tempPanel.Controls.Add(button);
 
                 button = CloneButton(guna2Button3);
+                button.Click += new EventHandler(ConfirmDeleteClass);
                 tempPanel.Controls.Add(button);
 
                 // add container event handler
@@ -219,11 +201,9 @@ namespace WindowFormUI
 
         private void CreateClass(object sender, EventArgs e)
         {
-            CreateClassForm form = new CreateClassForm
-            {
-                SchoolId = schoolId
-            };
+            CreateClassForm form = new CreateClassForm();
             form.Show();
+
             this.Dispose();
         }
 
@@ -231,10 +211,8 @@ namespace WindowFormUI
         {
             Guna2Panel panel = (Guna2Panel)((Guna2Button)sender).Parent;
             int classId = int.Parse(panel.Controls[9].Text);
-
             EditClassForm classForm = new EditClassForm
             {
-                SchoolId = schoolId,
                 ClassId = classId
             };
 
@@ -245,7 +223,7 @@ namespace WindowFormUI
         private void ConfirmDeleteClass(object sender, EventArgs e)
         {
             Guna2Panel panel = (Guna2Panel)((Guna2Button)sender).Parent;
-            int classId = int.Parse(panel.Controls[8].Text);
+            int classId = int.Parse(panel.Controls[9].Text);
 
             ConfirmDeletetion modal = new ConfirmDeletetion
             {
@@ -254,6 +232,16 @@ namespace WindowFormUI
 
             modal.Show();
             this.Dispose();
+        }
+
+        private void Exit(object sender, EventArgs e)
+        {
+            // Close the application
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

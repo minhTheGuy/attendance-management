@@ -77,6 +77,7 @@ namespace WindowFormUI
             this.guna2Button2.Size = new System.Drawing.Size(163, 50);
             this.guna2Button2.TabIndex = 26;
             this.guna2Button2.Text = " Trở lại";
+            this.guna2Button2.Click += new System.EventHandler(this.Back);
             // 
             // guna2Button1
             // 

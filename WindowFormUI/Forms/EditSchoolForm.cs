@@ -41,8 +41,9 @@ namespace WindowFormUI.Forms
             bool result = ValidateInput();
             if (result)
             {
-                schoolTableAdapter.UpdateSchoolById(guna2TextBox1.Text, guna2TextBox4.Text, guna2TextBox6.Text, guna2TextBox8.Text, Home.UserId);
-                MessageBox.Show("School updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                schoolTableAdapter.UpdateSchoolById(guna2TextBox1.Text, guna2TextBox4.Text, guna2TextBox6.Text, guna2TextBox8.Text, Home.userId);
+
+                MessageBox.Show("Tạo trường học thành công", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -50,7 +51,7 @@ namespace WindowFormUI.Forms
         {
             if (string.IsNullOrEmpty(guna2TextBox1.Text) || string.IsNullOrEmpty(guna2TextBox4.Text) || string.IsNullOrEmpty(guna2TextBox6.Text) || string.IsNullOrEmpty(guna2TextBox8.Text))
             {
-                MessageBox.Show("Please fill all fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Xin hãy điền hết ô dữ liệu", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
@@ -59,7 +60,7 @@ namespace WindowFormUI.Forms
 
         private void EditSchoolForm_Load(object sender, EventArgs e)
         {
-            QLDIEMDANHDataSet.SchoolDataTable schoolDataTable = schoolTableAdapter.GetSChoolById(schoolId);
+            QLDIEMDANHDataSet.SchoolDataTable schoolDataTable = schoolTableAdapter.GetSchoolById(schoolId);
             guna2TextBox1.Text = schoolDataTable[0].Ten_truong;
             guna2TextBox4.Text = schoolDataTable[0].Ten_co_so;
             guna2TextBox6.Text = schoolDataTable[0].Dia_chi;

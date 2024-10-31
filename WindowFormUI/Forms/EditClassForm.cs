@@ -74,12 +74,12 @@ namespace WindowFormUI
                     File.Copy(fileName, destName, true);
 
                     classTableAdapter.UpdateClassById(guna2TextBox4.Text, guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox6.Text, DateTime.Now, DateTime.Now, "Monday", "1", "B205", destName, classId);
+                    
                     MessageBox.Show("Class updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClassDashboard classDashboard = new ClassDashboard
-                    {
-                        SchoolId = schoolId
-                    };
+
+                    ClassDashboard classDashboard = new ClassDashboard();
                     classDashboard.Show();
+
                     this.Close();
                 }
                 catch (Exception ex)
@@ -101,10 +101,9 @@ namespace WindowFormUI
 
         private void Back(object sender, EventArgs e)
         {
-            ClassDashboard classDashboard = new ClassDashboard
-            {
-                SchoolId = schoolId
-            };
+            string schoolName = classTableAdapter.GetData().Where(classItem => classItem.id == classId).ToList()[0].ten_mon_hoc;
+
+            ClassDashboard classDashboard = new ClassDashboard();
 
             classDashboard.Show();
             this.Close();

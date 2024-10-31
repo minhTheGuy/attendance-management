@@ -16,19 +16,13 @@ namespace WindowFormUI
         private readonly SchoolTableAdapter schoolTableAdapter;
         private readonly ClassTableAdapter classTableAdapter;
         private readonly UsersTableAdapter usersTableAdapter;
-        private static int userId;
+        public static int userId = 0;
         public Home()
         {
             InitializeComponent();
             schoolTableAdapter = new SchoolTableAdapter();
             classTableAdapter = new ClassTableAdapter();
             usersTableAdapter = new UsersTableAdapter();
-        }
-
-        public static int UserId
-        {
-            get => userId;
-            set => userId = value;
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -98,16 +92,6 @@ namespace WindowFormUI
             guna2Panel5.Visible = false;
         }
 
-        private void ShowClassDashboardView(object sender, EventArgs e)
-        {
-            ClassTableAdapter classTableAdapter = new ClassTableAdapter();
-
-            ClassDashboard classDashboard = new ClassDashboard();
-            classDashboard.Show();
-            this.Hide();
-        }
-
-
         private Label CloneLabel(Label label)
         {
             Label newLabel = new Label
@@ -138,7 +122,7 @@ namespace WindowFormUI
                 BorderRadius = button.BorderRadius,
                 BorderThickness = button.BorderThickness
             };
-            
+
             return newButton;
         }
 
@@ -151,11 +135,12 @@ namespace WindowFormUI
             int schoolId = int.Parse(label.Text);
             string schoolName = panel.Controls[0].Text;
 
+            ClassDashboard.schoolId = schoolId;
+            ClassDashboard.schoolName = schoolName;
             ClassDashboard classDashboard = new ClassDashboard();
-            classDashboard.SchoolId = schoolId;
-            classDashboard.SchoolName = schoolName;
             classDashboard.Show();
-            this.Hide();
+
+            this.Dispose();
         }
 
         private void ConfirmDelete(object sender, EventArgs e)
@@ -169,6 +154,7 @@ namespace WindowFormUI
             ConfirmDeletetion confirmDeletetion = new ConfirmDeletetion();
             confirmDeletetion.SchoolId = int.Parse(schoolId);
             confirmDeletetion.Show();
+
             this.Dispose();
         }
 
@@ -190,28 +176,31 @@ namespace WindowFormUI
             EditSchoolForm editSchoolForm = new EditSchoolForm();
             editSchoolForm.SchoolId = int.Parse(label.Text);
             editSchoolForm.Show();
+
             this.Dispose();
         }
 
-        private void showClassDashboard(object sender, EventArgs e, int index)
+        private void ShowClassDashboard(object sender, EventArgs e, int index)
         {
             // Get the school id from the panel which contains this button
             Guna2Panel panel = (Guna2Panel)sender;
             Label label = (Label)panel.Controls[5];
+
             int schoolId = int.Parse(label.Text);
             string schoolName = panel.Controls[0].Text;
 
+            ClassDashboard.schoolId = schoolId;
+            ClassDashboard.schoolName = schoolName;
             ClassDashboard classDashboard = new ClassDashboard();
-            classDashboard.SchoolId = schoolId;
-            classDashboard.SchoolName = schoolName;
             classDashboard.Show();
-            this.Hide();
+
+            this.Dispose();
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
             int user_id = userId;
-            string username = usersTableAdapter.GetData().Where(user => user.id == user_id).FirstOrDefault().username;
+            string username = usersTableAdapter.GetUserById(user_id).FirstOrDefault().username;
             label29.Text = $"{username}";
 
 
@@ -266,12 +255,6 @@ namespace WindowFormUI
                 label.Text = $"{schoolRow.id}";
                 label.Visible = false;
                 panel.Controls.Add(label);
-                
-                //label = CloneLabel(label3);
-                //label.Text = $"{schoolRow.Thong_tin_them}";
-                //label.Text = $"{label3.Text}{schoolRow.Thong_tin_them}".Substring(0, 13) + "...";
-                //panel.Controls.Add(label);
-
 
                 Guna2Button button = CloneButton(guna2Button1);
                 button.Click += new EventHandler(ViewSchoolDetails);
@@ -288,7 +271,7 @@ namespace WindowFormUI
                 // add container event handler
                 panel.MouseHover += new EventHandler(Mouse_Hover);
                 panel.MouseLeave += new EventHandler(Mouse_Leave);
-                panel.Click += (sender_evt, e_evt) => showClassDashboard(sender_evt, e_evt, i);
+                panel.Click += (sender_evt, e_evt) => ShowClassDashboard(sender_evt, e_evt, i);
 
                 container.Controls.Add(panel);
             }
@@ -307,6 +290,7 @@ namespace WindowFormUI
 
             CreateSchoolForm createSchoolForm = new CreateSchoolForm();
             createSchoolForm.Show();
+
             this.Dispose();
         }
 
@@ -318,6 +302,16 @@ namespace WindowFormUI
         private void Label9_Leave(object sender, EventArgs e)
         {
             label9.ForeColor = Color.Gray;
+        }
+
+        private void Exit(object sender, EventArgs e)
+        {
+            // Close the application
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

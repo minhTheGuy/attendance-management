@@ -58,7 +58,7 @@ namespace WindowFormUI.Forms
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.DimGray;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Location = new System.Drawing.Point(58, 93);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -68,7 +68,7 @@ namespace WindowFormUI.Forms
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(657, 50);
-            this.guna2TextBox1.TabIndex = 24;
+            this.guna2TextBox1.TabIndex = 1;
             // 
             // guna2Button1
             // 
@@ -80,11 +80,11 @@ namespace WindowFormUI.Forms
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(92)))), ((int)(((byte)(250)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(391, 552);
+            this.guna2Button1.Location = new System.Drawing.Point(447, 557);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(163, 50);
-            this.guna2Button1.TabIndex = 22;
+            this.guna2Button1.TabIndex = 5;
             this.guna2Button1.Text = "Tạo mới";
             this.guna2Button1.Click += new System.EventHandler(this.CreateSchool);
             // 
@@ -99,7 +99,7 @@ namespace WindowFormUI.Forms
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(63, 465);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(58, 507);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(88, 22);
@@ -118,7 +118,7 @@ namespace WindowFormUI.Forms
             this.guna2TextBox8.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2TextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.guna2TextBox8.ForeColor = System.Drawing.Color.DimGray;
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.Location = new System.Drawing.Point(58, 410);
             this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -127,8 +127,8 @@ namespace WindowFormUI.Forms
             this.guna2TextBox8.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox8.PlaceholderText = "";
             this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(657, 50);
-            this.guna2TextBox8.TabIndex = 30;
+            this.guna2TextBox8.Size = new System.Drawing.Size(657, 92);
+            this.guna2TextBox8.TabIndex = 4;
             // 
             // guna2TextBox6
             // 
@@ -142,7 +142,7 @@ namespace WindowFormUI.Forms
             this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2TextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.guna2TextBox6.ForeColor = System.Drawing.Color.DimGray;
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.Location = new System.Drawing.Point(58, 308);
             this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -152,7 +152,7 @@ namespace WindowFormUI.Forms
             this.guna2TextBox6.PlaceholderText = "";
             this.guna2TextBox6.SelectedText = "";
             this.guna2TextBox6.Size = new System.Drawing.Size(657, 50);
-            this.guna2TextBox6.TabIndex = 28;
+            this.guna2TextBox6.TabIndex = 3;
             // 
             // guna2TextBox4
             // 
@@ -166,7 +166,7 @@ namespace WindowFormUI.Forms
             this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.guna2TextBox4.ForeColor = System.Drawing.Color.DimGray;
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.Location = new System.Drawing.Point(58, 201);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -176,14 +176,14 @@ namespace WindowFormUI.Forms
             this.guna2TextBox4.PlaceholderText = "";
             this.guna2TextBox4.SelectedText = "";
             this.guna2TextBox4.Size = new System.Drawing.Size(657, 50);
-            this.guna2TextBox4.TabIndex = 26;
+            this.guna2TextBox4.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 16.125F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(71)))), ((int)(((byte)(191)))));
-            this.label1.Location = new System.Drawing.Point(268, 9);
+            this.label1.Location = new System.Drawing.Point(244, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(234, 37);
             this.label1.TabIndex = 33;
@@ -194,7 +194,7 @@ namespace WindowFormUI.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(59, 64);
+            this.label2.Location = new System.Drawing.Point(63, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 23);
             this.label2.TabIndex = 35;
@@ -205,7 +205,7 @@ namespace WindowFormUI.Forms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(59, 172);
+            this.label3.Location = new System.Drawing.Point(63, 172);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 23);
             this.label3.TabIndex = 36;
@@ -216,7 +216,7 @@ namespace WindowFormUI.Forms
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(59, 279);
+            this.label4.Location = new System.Drawing.Point(63, 279);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 23);
             this.label4.TabIndex = 37;
@@ -227,7 +227,7 @@ namespace WindowFormUI.Forms
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(59, 381);
+            this.label5.Location = new System.Drawing.Point(63, 381);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 23);
             this.label5.TabIndex = 38;
@@ -245,10 +245,10 @@ namespace WindowFormUI.Forms
             this.guna2Button3.FillColor = System.Drawing.Color.White;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(92)))), ((int)(((byte)(250)))));
-            this.guna2Button3.Location = new System.Drawing.Point(200, 552);
+            this.guna2Button3.Location = new System.Drawing.Point(209, 557);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(163, 50);
-            this.guna2Button3.TabIndex = 39;
+            this.guna2Button3.TabIndex = 6;
             this.guna2Button3.Text = " Trở lại";
             this.guna2Button3.Click += new System.EventHandler(this.Back);
             // 

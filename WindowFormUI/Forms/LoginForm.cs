@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,7 +17,6 @@ namespace WindowFormUI
     public partial class LoginForm : Form
     {
         private readonly UsersTableAdapter usersTableAdapter ;
-
         public LoginForm()
         {
             InitializeComponent();
@@ -31,12 +31,25 @@ namespace WindowFormUI
             if (validationResult)
             {
                 // if the login is successful
-                int id = usersTableAdapter.GetData().Where(user => user.username == guna2TextBox1.Text).First().id;
+                int id = usersTableAdapter.GetData().Where(x => x.username.Equals(guna2TextBox1.Text) && x.password.Equals(Encrypt(guna2TextBox2.Text))).FirstOrDefault().id;
 
-                Home.UserId = id;
+                Home.userId = id;
                 Home home = new Home();
                 home.Show();
+
                 this.Hide();
+            }
+        }
+
+        private string Encrypt(string value)
+        {
+            //Using MD5 to encrypt a string
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                UTF8Encoding utf8 = new UTF8Encoding();
+                //Hash data
+                byte[] data = md5.ComputeHash(utf8.GetBytes(value));
+                return Convert.ToBase64String(data);
             }
         }
 
@@ -50,7 +63,9 @@ namespace WindowFormUI
                 return false;
             }
 
-            int count = usersTableAdapter.GetData().Where(user => user.username == guna2TextBox1.Text && user.password == guna2TextBox2.Text).Count();
+            // if the username or password is invalid, show the message box
+            int count = usersTableAdapter.GetUserByNameAndPassword(guna2TextBox1.Text, Encrypt(guna2TextBox2.Text)).Count();
+ 
 
             if (count == 0)
             {
@@ -81,6 +96,7 @@ namespace WindowFormUI
             // show the register form
             RegisterForm registerView = new RegisterForm();
             registerView.Show();
+
             this.Hide();
         }
     }

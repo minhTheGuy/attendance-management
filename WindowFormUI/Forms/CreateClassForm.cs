@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Windows.Forms;
 using WindowFormUI.QLDIEMDANHDataSetTableAdapters;
@@ -8,31 +8,27 @@ namespace WindowFormUI
     public partial class CreateClassForm : Form
     {
         private readonly ClassTableAdapter classTableAdapter = new ClassTableAdapter();
-        private int schoolId;
 
         public CreateClassForm()
         {
             InitializeComponent();
             classTableAdapter = new ClassTableAdapter();
-            this.schoolId = 0;
         }
-        public int SchoolId
-        {
-            get { return schoolId; }
-            set { schoolId = value; }
-        }
+
         private void BrowseFile(object sender, EventArgs e)
         {
             // Create an instance of the open file dialog box.
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm;*.csv";
+            openFileDialog1.Title = "Chọn file Excel";
+
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 guna2TextBox8.Text = openFileDialog1.FileName;
             }
             else
             {
-                MessageBox.Show("Please select a file", "File Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hãy chọn file", "File Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -43,32 +39,38 @@ namespace WindowFormUI
             {
                 try
                 {
-                    SaveFileDialog saveFileDialog = new SaveFileDialog();
-                    saveFileDialog.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm;*.csv";
-                    saveFileDialog.FileName = guna2TextBox8.Text;
-                    saveFileDialog.InitialDirectory = @"C:\Uploads";
-                    saveFileDialog.RestoreDirectory = true;
-                    saveFileDialog.Title = "Save Excel File";
+                    if (!Directory.Exists(@"C:\Uploads"))
+                    {
+                        Directory.CreateDirectory(@"C:\Uploads");
+                    }
+
+                    SaveFileDialog saveFileDialog = new SaveFileDialog
+                    {
+                        Filter = "Excel Files|*.xls;*.xlsx;*.xlsm;*.csv",
+                        FileName = Path.GetFileName(guna2TextBox8.Text),
+                        InitialDirectory = @"C:\Uploads",
+                        RestoreDirectory = true,
+                        Title = "Lưu file Excel"
+                    };
+
                     saveFileDialog.ShowDialog();
 
                     if (saveFileDialog.FileName == "")
                     {
-                        MessageBox.Show("Please select a file", "File Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Hãy chọn file", "File Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
 
-                    // copy file to ExcelFiles folder
                     string fileName = guna2TextBox8.Text;
                     string destName = saveFileDialog.FileName;
                     File.Copy(fileName, destName, true);
 
-                    classTableAdapter.Insert(schoolId, guna2TextBox4.Text, guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox6.Text, DateTime.Now, DateTime.Now, "Monday", "1", "B205", guna2TextBox8.Text);
-                    MessageBox.Show("Class created successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClassDashboard classDashboard = new ClassDashboard
-                    {
-                        SchoolId = schoolId
-                    };
+                    classTableAdapter.Insert(ClassDashboard.schoolId, guna2TextBox4.Text, guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox6.Text, DateTime.Now, DateTime.Now, "Monday", "1", "B205", destName);
+                    MessageBox.Show("Lớp học được tạo thành công", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    ClassDashboard classDashboard = new ClassDashboard();
                     classDashboard.Show();
+                    
                     this.Close();
                 }
                 catch (Exception ex)
@@ -82,7 +84,7 @@ namespace WindowFormUI
         {
             if (string.IsNullOrEmpty(guna2TextBox1.Text) || string.IsNullOrEmpty(guna2TextBox2.Text) || string.IsNullOrEmpty(guna2TextBox4.Text) || string.IsNullOrEmpty(guna2TextBox6.Text) || string.IsNullOrEmpty(guna2TextBox8.Text))
             {
-                MessageBox.Show("Please fill all the fields", "Fields Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Xin hãy điền hết các ô dữ liệu", "Fields Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             return true;
@@ -90,13 +92,10 @@ namespace WindowFormUI
 
         private void Back(object sender, EventArgs e)
         {
-            ClassDashboard classDashboard = new ClassDashboard
-            {
-                SchoolId = schoolId
-            };
-
+            ClassDashboard classDashboard = new ClassDashboard();
             classDashboard.Show();
-            this.Close();
+
+            this.Dispose();
         }
     }
 }

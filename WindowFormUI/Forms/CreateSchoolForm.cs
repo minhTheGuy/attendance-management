@@ -28,8 +28,9 @@ namespace WindowFormUI.Forms
             }
 
             // create new school
-            schoolTableAdapter.Insert($"{ guna2TextBox1.Text}", Home.UserId, $"{guna2TextBox6.Text}", $"{guna2TextBox8.Text}", $"{guna2TextBox4.Text}");
-            MessageBox.Show("School created successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            schoolTableAdapter.Insert($"{ guna2TextBox1.Text}", Home.userId, $"{guna2TextBox4.Text}", $"{guna2TextBox6.Text}", $"{guna2TextBox8.Text}");
+
+            MessageBox.Show("Trường đã được tạo thành công", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Home home = new Home();
             home.Show();
             this.Close();
@@ -40,7 +41,7 @@ namespace WindowFormUI.Forms
             // if input is empty, return false
             if (string.IsNullOrEmpty(guna2TextBox1.Text) || string.IsNullOrEmpty(guna2TextBox4.Text) || string.IsNullOrEmpty(guna2TextBox6.Text) || string.IsNullOrEmpty(guna2TextBox8.Text))
             {
-                MessageBox.Show("Please fill all the fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Xin hãy điền hết các ô dữ liệu", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 

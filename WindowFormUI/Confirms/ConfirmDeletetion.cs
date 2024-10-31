@@ -7,8 +7,8 @@ namespace WindowFormUI
     {
         private int schoolId;
         private int classId;
-        private QLDIEMDANHDataSetTableAdapters.SchoolTableAdapter schoolTableAdapter;
-        private QLDIEMDANHDataSetTableAdapters.ClassTableAdapter classTableAdapter;
+        private readonly QLDIEMDANHDataSetTableAdapters.SchoolTableAdapter schoolTableAdapter;
+        private readonly QLDIEMDANHDataSetTableAdapters.ClassTableAdapter classTableAdapter;
 
         public ConfirmDeletetion()
         {
@@ -33,19 +33,21 @@ namespace WindowFormUI
 
         private void Delete(object sender, EventArgs e)
         {
+            Home home = new Home();
+
             if (!(schoolId == 0))
             {
                 // Delete school
                 try
                 {
                     schoolTableAdapter.DeleteSchoolById(schoolId);
-                    MessageBox.Show("School deleted successfully");
 
-                } catch (Exception ex)
+                    MessageBox.Show("Trường học đã được xoá thành công!", "Xoá trường học", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show(@"Hãy chắc chắn rằng bạn đã xoá hết lớp học !");
                 }
-                Home home = new Home();
 
                 home.Show();
                 this.Dispose();
@@ -54,9 +56,8 @@ namespace WindowFormUI
             {
                 // Delete class
                 classTableAdapter.DeleteClassById(classId);
-                MessageBox.Show("Class deleted successfully");
 
-                Home home = new Home();
+                MessageBox.Show("Lớp học đã được xoá thành công", "Xoá lớp học", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 home.Show();
                 this.Dispose();
@@ -64,12 +65,42 @@ namespace WindowFormUI
             else
             {
                 MessageBox.Show("Something went wrong");
+
+                home.Show();
+                this.Dispose();
             }
         }
 
         private void Back(object sender, EventArgs e)
         {
-            this.Hide();
+            Home home = new Home();
+            home.Show();
+
+            this.Dispose();
         }
+
+        private void ConfirmDeletetion_Load(object sender, EventArgs e)
+        {
+            // Set title for form
+            if (schoolId != 0)
+            {
+                label1.Text = "Xác nhận xoá trường học";
+            }
+            else if (classId != 0)
+            {
+                label1.Text = "Xác nhận xoá lớp học";
+            }
+
+            // Set message for form
+            if (schoolId != 0)
+            {
+                guna2HtmlLabel2.Text = "Bạn có chắc chắn muốn xoá trường học này?";
+            }
+            else if (classId != 0)
+            {
+                guna2HtmlLabel2.Text = "Bạn có chắc chắn muốn xoá lớp học này?";
+            }
+        }
+
     }
 }

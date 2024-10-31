@@ -1,6 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
 using WindowFormUI.QLDIEMDANHDataSetTableAdapters;
 
 namespace WindowFormUI.Forms
@@ -8,11 +11,21 @@ namespace WindowFormUI.Forms
     public partial class RegisterForm : Form
     {
         private readonly UsersTableAdapter usersTableAdapter;
-
         public RegisterForm()
         {
             InitializeComponent();
             usersTableAdapter = new UsersTableAdapter();
+        }
+        private string Encrypt(string value)
+        {
+            //Using MD5 to encrypt a string
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                UTF8Encoding utf8 = new UTF8Encoding();
+                //Hash data
+                byte[] data = md5.ComputeHash(utf8.GetBytes(value));
+                return Convert.ToBase64String(data);
+            }
         }
 
         private void Register(object sender, EventArgs e)
@@ -24,11 +37,11 @@ namespace WindowFormUI.Forms
             {
                 // if the registration is successful
                 // show the login form
-                usersTableAdapter.Insert(guna2TextBox1.Text, guna2TextBox3.Text, guna2TextBox2.Text);
-
+                // encrypt the password and insert the user into the database
+                usersTableAdapter.Insert(guna2TextBox1.Text, Encrypt(guna2TextBox3.Text), guna2TextBox2.Text);
                 LoginForm loginView = new LoginForm();
                 loginView.Show();
-                this.Hide();
+                this.Dispose();
             }
         }
 
@@ -75,6 +88,14 @@ namespace WindowFormUI.Forms
                 return false;
             }
 
+            // if user doesn't accept the terms and conditions, show the message box
+            if ((int)iconPictureBox1.IconChar == (int)IconChar.Circle)
+            {
+                MessageBox.Show("Please accept the terms and conditions", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Cancel = true;
+                return false;
+            }
+
             // let the user know that the registration is successful
             MessageBox.Show("Registration successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return true;
@@ -84,18 +105,18 @@ namespace WindowFormUI.Forms
         {
             LoginForm loginView = new LoginForm();
             loginView.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void AcceptTerm(object sender, EventArgs e)
         {
             if (iconPictureBox3.IconChar.ToString() == "Circle")
             {
-                iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.CircleCheck;
+                iconPictureBox3.IconChar =IconChar.CircleCheck;
             }
             else
             {
-                iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Circle;
+                iconPictureBox3.IconChar = IconChar.Circle;
             }
         }
     }
