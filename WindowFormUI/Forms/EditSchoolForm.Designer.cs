@@ -60,14 +60,14 @@ namespace WindowFormUI.Forms
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(58, 93);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2TextBox1.Location = new System.Drawing.Point(44, 76);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox1.PlaceholderText = "Đại học Tôn Đức Thắng";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(519, 50);
+            this.guna2TextBox1.Size = new System.Drawing.Size(491, 41);
             this.guna2TextBox1.TabIndex = 1;
             // 
             // guna2Button2
@@ -84,10 +84,10 @@ namespace WindowFormUI.Forms
             this.guna2Button2.FillColor = System.Drawing.Color.White;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(92)))), ((int)(((byte)(250)))));
-            this.guna2Button2.Location = new System.Drawing.Point(58, 462);
+            this.guna2Button2.Location = new System.Drawing.Point(114, 457);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(163, 50);
+            this.guna2Button2.Size = new System.Drawing.Size(122, 41);
             this.guna2Button2.TabIndex = 6;
             this.guna2Button2.Text = " Trở lại";
             this.guna2Button2.Click += new System.EventHandler(this.Back);
@@ -102,10 +102,10 @@ namespace WindowFormUI.Forms
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(92)))), ((int)(((byte)(250)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(414, 462);
+            this.guna2Button1.Location = new System.Drawing.Point(327, 457);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(163, 50);
+            this.guna2Button1.Size = new System.Drawing.Size(122, 41);
             this.guna2Button1.TabIndex = 5;
             this.guna2Button1.Text = "Chỉnh sửa";
             this.guna2Button1.Click += new System.EventHandler(this.EditSchool);
@@ -116,10 +116,10 @@ namespace WindowFormUI.Forms
             this.tenTruong.BackColor = System.Drawing.Color.Transparent;
             this.tenTruong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tenTruong.ForeColor = System.Drawing.Color.DimGray;
-            this.tenTruong.Location = new System.Drawing.Point(58, 68);
+            this.tenTruong.Location = new System.Drawing.Point(44, 55);
             this.tenTruong.Margin = new System.Windows.Forms.Padding(2);
             this.tenTruong.Name = "tenTruong";
-            this.tenTruong.Size = new System.Drawing.Size(113, 25);
+            this.tenTruong.Size = new System.Drawing.Size(85, 20);
             this.tenTruong.TabIndex = 21;
             this.tenTruong.Text = " Tên trường";
             // 
@@ -129,10 +129,10 @@ namespace WindowFormUI.Forms
             this.tieuDe.BackColor = System.Drawing.Color.Transparent;
             this.tieuDe.Font = new System.Drawing.Font("Segoe UI Semibold", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tieuDe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(71)))), ((int)(((byte)(191)))));
-            this.tieuDe.Location = new System.Drawing.Point(214, 16);
+            this.tieuDe.Location = new System.Drawing.Point(198, 11);
             this.tieuDe.Margin = new System.Windows.Forms.Padding(2);
             this.tieuDe.Name = "tieuDe";
-            this.tieuDe.Size = new System.Drawing.Size(226, 39);
+            this.tieuDe.Size = new System.Drawing.Size(170, 32);
             this.tieuDe.TabIndex = 20;
             this.tieuDe.Text = "Chỉnh sửa trường";
             // 
@@ -148,10 +148,10 @@ namespace WindowFormUI.Forms
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(58, 411);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(44, 408);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(113, 22);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(85, 18);
             this.guna2HtmlLabel4.TabIndex = 31;
             this.guna2HtmlLabel4.Text = "tối da 100 từ";
             // 
@@ -169,14 +169,14 @@ namespace WindowFormUI.Forms
             this.guna2TextBox8.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2TextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(58, 357);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2TextBox8.Location = new System.Drawing.Point(44, 345);
+            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
             this.guna2TextBox8.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox8.PlaceholderText = "Trường Đại học Tôn Đức Thắng (TDTU)";
             this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(519, 50);
+            this.guna2TextBox8.Size = new System.Drawing.Size(491, 59);
             this.guna2TextBox8.TabIndex = 4;
             // 
             // guna2HtmlLabel3
@@ -185,10 +185,10 @@ namespace WindowFormUI.Forms
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(58, 332);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(44, 321);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(189, 25);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(142, 20);
             this.guna2HtmlLabel3.TabIndex = 29;
             this.guna2HtmlLabel3.Text = "Thông tin (optional)";
             // 
@@ -206,14 +206,14 @@ namespace WindowFormUI.Forms
             this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2TextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(58, 268);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2TextBox6.Location = new System.Drawing.Point(44, 255);
+            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
             this.guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox6.PlaceholderText = "19 Đ. Nguyễn Hữu Thọ, phường Tân Phong, Q.7, TP Hồ Chí Minh";
             this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(519, 50);
+            this.guna2TextBox6.Size = new System.Drawing.Size(491, 41);
             this.guna2TextBox6.TabIndex = 3;
             // 
             // guna2HtmlLabel2
@@ -222,10 +222,10 @@ namespace WindowFormUI.Forms
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(58, 243);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(44, 231);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(157, 25);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(118, 20);
             this.guna2HtmlLabel2.TabIndex = 27;
             this.guna2HtmlLabel2.Text = "Địa chỉ (optional)";
             // 
@@ -243,14 +243,14 @@ namespace WindowFormUI.Forms
             this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(58, 181);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2TextBox4.Location = new System.Drawing.Point(44, 161);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox4.PlaceholderText = "Hồ Chí Minh";
             this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(519, 50);
+            this.guna2TextBox4.Size = new System.Drawing.Size(491, 41);
             this.guna2TextBox4.TabIndex = 2;
             // 
             // guna2HtmlLabel1
@@ -259,18 +259,18 @@ namespace WindowFormUI.Forms
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(58, 156);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(44, 137);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(189, 25);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(142, 20);
             this.guna2HtmlLabel1.TabIndex = 25;
             this.guna2HtmlLabel1.Text = " Tên cơ sở (optional)";
             // 
             // EditSchoolForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 527);
+            this.ClientSize = new System.Drawing.Size(579, 520);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
@@ -283,10 +283,10 @@ namespace WindowFormUI.Forms
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2TextBox4);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EditSchoolForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Chỉnh sửa trường";
             this.Load += new System.EventHandler(this.EditSchoolForm_Load);
             this.ResumeLayout(false);
 

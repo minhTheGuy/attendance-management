@@ -35,9 +35,6 @@ namespace WindowFormUI.Forms
 
             if (validationResult)
             {
-                // if the registration is successful
-                // show the login form
-                // encrypt the password and insert the user into the database
                 usersTableAdapter.Insert(guna2TextBox1.Text, Encrypt(guna2TextBox3.Text), guna2TextBox2.Text);
                 LoginForm loginView = new LoginForm();
                 loginView.Show();
@@ -50,7 +47,7 @@ namespace WindowFormUI.Forms
             // if there's no input in the username or email or password, show the message box
             if (guna2TextBox1.Text == "" || guna2TextBox2.Text == "" || guna2TextBox3.Text == "" || guna2TextBox4.Text == "")
             {
-                MessageBox.Show("Please fill in the required fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Hãy nhập hết các trường dữ liệu !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Cancel = true;
                 return false;
             }
@@ -60,7 +57,7 @@ namespace WindowFormUI.Forms
 
             if (!System.Text.RegularExpressions.Regex.IsMatch(guna2TextBox2.Text, emailRegex))
             {
-                MessageBox.Show("Invalid email format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Sai định dạng Email !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Cancel = true;
                 return false;
             }
@@ -68,7 +65,7 @@ namespace WindowFormUI.Forms
             // if the password is less than 8 characters, show the message box
             if (guna2TextBox3.Text.Length < 8)
             {
-                MessageBox.Show("Password must be at least 8 characters", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Mật khẩu có độ dài ít nhất 8 ký tự", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Cancel = true;
                 return false;
             }
@@ -76,7 +73,7 @@ namespace WindowFormUI.Forms
             // if password and confirm password do not match, show the message box
             if (guna2TextBox3.Text != guna2TextBox4.Text)
             {
-                MessageBox.Show("Password and confirm password do not match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Mật khẩu và xác nhận mật khẩu không khớp", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Cancel = true;
                 return false;
             }
@@ -97,7 +94,7 @@ namespace WindowFormUI.Forms
             }
 
             // let the user know that the registration is successful
-            MessageBox.Show("Registration successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Đăng ký thành công !", "Đăng ký tài khoản", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return true;
         }
 
@@ -118,6 +115,11 @@ namespace WindowFormUI.Forms
             {
                 iconPictureBox3.IconChar = IconChar.Circle;
             }
+        }
+
+        private void RegisterForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

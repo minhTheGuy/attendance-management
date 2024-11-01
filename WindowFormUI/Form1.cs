@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,23 +16,22 @@ namespace WindowFormUI
     public partial class Form1 : Form
     {
         private readonly FaceRec faceRec = new FaceRec();
-        private int schoolId;
         private int classId;
-        private string schoolName;
-        private string className;
         private string attendanceDate;
         private HashSet<string> studentNames;
         private readonly ClassTableAdapter classTableAdapter = new ClassTableAdapter();
         public Form1()
         {
             InitializeComponent();
-            this.schoolId = 0;
             this.classId = 0;
-            this.schoolName = "";
-            this.className = "";
             this.attendanceDate = DateTime.Now.ToString("yyyy-MM-dd");
             this.classTableAdapter = new ClassTableAdapter();
             this.studentNames = new HashSet<string>();
+
+            if (!Directory.Exists(Environment.CurrentDirectory + "\\Image"))
+            {
+                Directory.CreateDirectory(Environment.CurrentDirectory + "\\Image");
+            }
         }
         public int ClassId
         {
@@ -44,13 +44,6 @@ namespace WindowFormUI
             get => attendanceDate;
             set => attendanceDate = value;
         }
-
-        public int SchoolId { get => schoolId; set => schoolId = value; }
-
-        public string SchoolName { get => schoolName; set => schoolName = value; }
-
-        public string ClassName { get => className; set => className = value; }
-
         private void btnSaveImage_Click(object sender, EventArgs e)
         {
             faceRec.Save_IMAGE(txtName.Text.ToUpper());
@@ -78,7 +71,6 @@ namespace WindowFormUI
                 Excel.Workbook workbook = application.Workbooks.Open(path);
                 Excel.Worksheet worksheet = workbook.Worksheets[1];
                 Excel.Range usedRange = worksheet.UsedRange;
-                // add new sheet the latest
                 Excel.Worksheet newSheet = workbook.Worksheets.Add(After: worksheet);
 
                 try
@@ -154,6 +146,14 @@ namespace WindowFormUI
 
             ClassView classView = new ClassView();
             classView.Show();
+            this.Dispose();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ClassView classView = new ClassView();
+            classView.Show();
+
             this.Dispose();
         }
     }

@@ -64,14 +64,14 @@ namespace WindowFormUI
                     string fileName = guna2TextBox8.Text;
                     string destName = saveFileDialog.FileName;
                     File.Copy(fileName, destName, true);
+                    classTableAdapter.Insert(ClassDashboard.schoolId, guna2TextBox4.Text, guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox6.Text, DateTime.Now, DateTime.Now, guna2ComboBox1.Text, guna2TextBox3.Text, guna2TextBox5.Text, destName);
 
-                    classTableAdapter.Insert(ClassDashboard.schoolId, guna2TextBox4.Text, guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox6.Text, DateTime.Now, DateTime.Now, "Monday", "1", "B205", destName);
                     MessageBox.Show("Lớp học được tạo thành công", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     ClassDashboard classDashboard = new ClassDashboard();
                     classDashboard.Show();
                     
-                    this.Close();
+                    this.Dispose();
                 }
                 catch (Exception ex)
                 {
