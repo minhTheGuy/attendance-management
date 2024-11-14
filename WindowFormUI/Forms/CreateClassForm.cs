@@ -66,10 +66,6 @@ namespace WindowFormUI
                     File.Copy(fileName, destName, true);
                     classTableAdapter.Insert(ClassDashboard.schoolId, guna2TextBox4.Text, guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox6.Text, DateTime.Now, DateTime.Now, guna2ComboBox1.Text, guna2TextBox3.Text, guna2TextBox5.Text, destName);
 
-<<<<<<< HEAD
-                    classTableAdapter.Insert(ClassDashboard.schoolId, guna2TextBox4.Text, guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox6.Text, DateTime.Now, DateTime.Now, guna2ComboBox1.Text.Replace("Thứ", ""), guna2TextBox3.Text, guna2TextBox5.Text, destName);
-=======
->>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
                     MessageBox.Show("Lớp học được tạo thành công", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     ClassDashboard classDashboard = new ClassDashboard();
