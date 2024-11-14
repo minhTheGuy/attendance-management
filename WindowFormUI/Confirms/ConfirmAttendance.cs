@@ -22,6 +22,7 @@ namespace WindowFormUI
         {
             Form1 form = new Form1
             {
+                ClassId = ClassView.classId,
                 AttendanceDate = guna2DateTimePicker1.Value.ToString("yyyy-MM-dd"),
             };
 

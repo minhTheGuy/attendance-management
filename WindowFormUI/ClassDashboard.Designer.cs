@@ -40,7 +40,6 @@
             this.label54 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -177,7 +176,6 @@
             this.guna2Panel5.Controls.Add(this.label54);
             this.guna2Panel5.Controls.Add(this.label50);
             this.guna2Panel5.Controls.Add(this.label48);
-            this.guna2Panel5.Controls.Add(this.label46);
             this.guna2Panel5.Controls.Add(this.label25);
             this.guna2Panel5.Controls.Add(this.label26);
             this.guna2Panel5.Controls.Add(this.label23);
@@ -205,7 +203,7 @@
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.ForeColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(30, 315);
+            this.label52.Location = new System.Drawing.Point(30, 274);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(28, 17);
             this.label52.TabIndex = 66;
@@ -216,7 +214,7 @@
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.ForeColor = System.Drawing.Color.Black;
-            this.label54.Location = new System.Drawing.Point(30, 355);
+            this.label54.Location = new System.Drawing.Point(30, 314);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(49, 17);
             this.label54.TabIndex = 69;
@@ -227,7 +225,7 @@
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.ForeColor = System.Drawing.Color.Black;
-            this.label50.Location = new System.Drawing.Point(30, 275);
+            this.label50.Location = new System.Drawing.Point(30, 234);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(26, 17);
             this.label50.TabIndex = 63;
@@ -238,22 +236,11 @@
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.Color.Black;
-            this.label48.Location = new System.Drawing.Point(30, 236);
+            this.label48.Location = new System.Drawing.Point(30, 195);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(46, 17);
             this.label48.TabIndex = 60;
             this.label48.Text = "Nhóm:";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(30, 200);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(52, 17);
-            this.label46.TabIndex = 58;
-            this.label46.Text = "Học kỳ:";
             // 
             // label25
             // 
@@ -312,7 +299,7 @@
             this.container.Controls.Add(this.guna2Panel2);
             this.container.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.container.Location = new System.Drawing.Point(23, 128);
-            this.container.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.container.Margin = new System.Windows.Forms.Padding(2);
             this.container.Name = "container";
             this.container.Size = new System.Drawing.Size(1020, 633);
             this.container.TabIndex = 50;
@@ -566,7 +553,6 @@
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.FlowLayoutPanel container;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;

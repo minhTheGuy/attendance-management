@@ -16,9 +16,11 @@ namespace WindowFormUI
 
     public class FaceRec : Form
     {
+        private const double CURRENT_THRESHOLD = 3500;
+
         private double distance = 1E+19;
 
-        private CascadeClassifier CascadeClassifier = new CascadeClassifier(Environment.CurrentDirectory + "/Haarcascade/haarcascade_frontalface_alt.xml");
+        private CascadeClassifier CascadeClassifier = new CascadeClassifier(Environment.CurrentDirectory + "/Haarcascade/haarcascade_frontalface_default.xml");
 
         private Emgu.CV.Image<Bgr, byte> Frame = null;
 
@@ -44,7 +46,7 @@ namespace WindowFormUI
 
         private List<string> Names = new List<string>();
 
-        private EigenFaceRecognizer eigenFaceRecognizer;
+        private FisherFaceRecognizer fisherFaceRecognizer;
 
         private IContainer components = null;
         private HashSet<string> studentNames;
@@ -175,8 +177,8 @@ namespace WindowFormUI
                     num++;
                 }
 
-                eigenFaceRecognizer = new EigenFaceRecognizer(num, distance);
-                ((FaceRecognizer)eigenFaceRecognizer).Train<Gray, byte>(trainedFaces.ToArray(), PersonLabs.ToArray());
+                fisherFaceRecognizer = new FisherFaceRecognizer(0, CURRENT_THRESHOLD);//4000
+                ((FaceRecognizer)fisherFaceRecognizer).Train<Gray, byte>(trainedFaces.ToArray(), PersonLabs.ToArray());
             }
             catch
             {
@@ -191,19 +193,23 @@ namespace WindowFormUI
                 {
                     Image<Gray, byte> val = resultImage.Convert<Gray, byte>().Resize(100, 100, (Inter)2);
                     CvInvoke.EqualizeHist((IInputArray)(object)val, (IOutputArray)(object)val);
-                    PredictionResult val2 = ((FaceRecognizer)eigenFaceRecognizer).Predict((IInputArray)(object)val);
+                    PredictionResult val2 = ((FaceRecognizer)fisherFaceRecognizer).Predict((IInputArray)(object)val);
                     Bgr val3;
-                    if (val2.Label != -1 && val2.Distance < distance)
+                    if (val2.Label != -1 && val2.Distance < 2000)
                     {
                         PictureBox_smallFrame.Image = trainedFaces[val2.Label].Bitmap;
-                        setPersonName = Names[val2.Label].Replace(Environment.CurrentDirectory + "\\Image\\", "").Replace(".jpg", "");
                         Image<Bgr, byte> frame = Frame;
-                        string text = setPersonName;
-                        if (text.Length > 0) {
-                            studentNames.Add(text);
-                        }
+
                         Point point = new Point(face.X - 2, face.Y - 2);
                         val3 = new Bgr(Color.LimeGreen);
+
+                        setPersonName = Names[val2.Label].Replace(Environment.CurrentDirectory + "\\Image\\", "").Replace(".jpg", "");
+                        string text = setPersonName;
+
+                        if (text.Length > 0)
+                        {
+                            studentNames.Add(text);
+                        }
                         CvInvoke.PutText((IInputOutputArray)(object)frame, text, point, (FontFace)1, 1.0, ((Bgr)(val3)).MCvScalar, 1, (Emgu.CV.CvEnum.LineType)8, false);
                     }
                     else

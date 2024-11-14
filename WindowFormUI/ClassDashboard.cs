@@ -29,8 +29,7 @@ namespace WindowFormUI
             QLDIEMDANHDataSet.ClassRow classRow = classTableAdapter.GetData().Where(classItem => classItem.id == classId).ToList()[0];
 
             label23.Text = "Mã môn: " + classRow.ma_mon;
-            label25.Text = "Năm học " + $"{classRow.startDate.Year} - {classRow.endDate.Year}";
-            label46.Text = "Học kì: " + "HK1";
+            label25.Text = "Năm học " + $"{classRow.startDate.Year} - {classRow.endDate.Year + 1}";
             label48.Text = "Nhóm: " + classRow.nhom;
             label50.Text = "Tổ: " + classRow.to;
             label52.Text = "Ca học: " + classRow.ca_hoc;

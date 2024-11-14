@@ -49,7 +49,10 @@ namespace WindowFormUI
             nhomLabel.Text = $"Nhóm: {ClassRow.nhom}";
             toLabel.Text = $"Tổ: {ClassRow.to}";
             caHocLabel.Text = $"Ca: {ClassRow.ca_hoc}";
-            hocKiLabel.Text = $"Học kì: {ClassRow.startDate.Year}-{ClassRow.endDate.Year}";
+            ngayHocLabel.Text = $"Ngày: {ClassRow.day}";
+            phongHocLabel.Text = $"Phòng: {ClassRow.phong_hoc}";
+            hocKiLabel.Text = $"Học kì: {ClassRow.startDate.Year}-{ClassRow.endDate.Year + 1}";
+
 
             string path = ClassRow.excel_path;
             if (path != null)
@@ -257,6 +260,8 @@ namespace WindowFormUI
                 for (int j = 1; j <= columnCount; j++)
                 {
                     newWorksheet.Cells[i, j] = values[i, j];
+                    newWorksheet.Cells[i, j].ColumnWidth = worksheet.Cells[i, j].ColumnWidth;
+                    newWorksheet.Cells[i, j].Interior.Color = worksheet.Cells[i, j].Interior.Color;
                 }
             }
 
@@ -309,7 +314,6 @@ namespace WindowFormUI
             System.Runtime.InteropServices.Marshal.ReleaseComObject(newApplication);
             System.Runtime.InteropServices.Marshal.ReleaseComObject(newWorkbook);
             System.Runtime.InteropServices.Marshal.ReleaseComObject(newWorksheet);
-
 
             System.Diagnostics.Process.Start("explorer.exe", saveFileDialog.FileName);
         }

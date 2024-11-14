@@ -169,6 +169,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FaceRegconitionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FaceRecognition.cs">
       <SubType>Form</SubType>
     </Compile>
