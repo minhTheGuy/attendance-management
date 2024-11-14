@@ -204,6 +204,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Điểm danh bằng khuôn mặt";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCamara)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaptured)).EndInit();
             this.groupBox1.ResumeLayout(false);

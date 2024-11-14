@@ -317,5 +317,10 @@ namespace WindowFormUI
 
             System.Diagnostics.Process.Start("explorer.exe", saveFileDialog.FileName);
         }
+
+        private void ClassView_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

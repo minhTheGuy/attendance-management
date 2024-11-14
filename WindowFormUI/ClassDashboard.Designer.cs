@@ -524,6 +524,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Name = "ClassDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClassDashboard_FormClosed);
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();

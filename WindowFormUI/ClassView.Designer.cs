@@ -46,6 +46,8 @@
             this.toLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.caHocLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ngayHocLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.phongHocLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.hocKiLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.soBuoiDiemDanhLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -199,7 +201,11 @@
             this.classNameLabel.Location = new System.Drawing.Point(2, 47);
             this.classNameLabel.Margin = new System.Windows.Forms.Padding(2);
             this.classNameLabel.Name = "classNameLabel";
+<<<<<<< HEAD
             this.classNameLabel.Size = new System.Drawing.Size(155, 46);
+=======
+            this.classNameLabel.Size = new System.Drawing.Size(155, 47);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.classNameLabel.TabIndex = 53;
             this.classNameLabel.Text = "class title";
             // 
@@ -219,7 +225,11 @@
             this.maMonLabel.BackColor = System.Drawing.Color.Transparent;
             this.maMonLabel.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maMonLabel.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.maMonLabel.Location = new System.Drawing.Point(2, 97);
+=======
+            this.maMonLabel.Location = new System.Drawing.Point(2, 98);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.maMonLabel.Margin = new System.Windows.Forms.Padding(2);
             this.maMonLabel.Name = "maMonLabel";
             this.maMonLabel.Size = new System.Drawing.Size(472, 37);
@@ -233,7 +243,11 @@
             this.nhomLabel.BackColor = System.Drawing.Color.Transparent;
             this.nhomLabel.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nhomLabel.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.nhomLabel.Location = new System.Drawing.Point(2, 138);
+=======
+            this.nhomLabel.Location = new System.Drawing.Point(2, 139);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.nhomLabel.Margin = new System.Windows.Forms.Padding(2);
             this.nhomLabel.Name = "nhomLabel";
             this.nhomLabel.Size = new System.Drawing.Size(472, 37);
@@ -247,7 +261,11 @@
             this.toLabel.BackColor = System.Drawing.Color.Transparent;
             this.toLabel.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toLabel.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.toLabel.Location = new System.Drawing.Point(2, 179);
+=======
+            this.toLabel.Location = new System.Drawing.Point(2, 180);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.toLabel.Margin = new System.Windows.Forms.Padding(2);
             this.toLabel.Name = "toLabel";
             this.toLabel.Size = new System.Drawing.Size(472, 37);
@@ -261,7 +279,11 @@
             this.caHocLabel.BackColor = System.Drawing.Color.Transparent;
             this.caHocLabel.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.caHocLabel.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.caHocLabel.Location = new System.Drawing.Point(2, 261);
+=======
+            this.caHocLabel.Location = new System.Drawing.Point(2, 262);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.caHocLabel.Margin = new System.Windows.Forms.Padding(2);
             this.caHocLabel.Name = "caHocLabel";
             this.caHocLabel.Size = new System.Drawing.Size(472, 37);
@@ -290,13 +312,44 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(476, 498);
             this.flowLayoutPanel1.TabIndex = 64;
             // 
+            // ngayHocLabel
+            // 
+            this.ngayHocLabel.AutoSize = false;
+            this.ngayHocLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ngayHocLabel.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngayHocLabel.ForeColor = System.Drawing.Color.Black;
+            this.ngayHocLabel.Location = new System.Drawing.Point(2, 221);
+            this.ngayHocLabel.Margin = new System.Windows.Forms.Padding(2);
+            this.ngayHocLabel.Name = "ngayHocLabel";
+            this.ngayHocLabel.Size = new System.Drawing.Size(472, 37);
+            this.ngayHocLabel.TabIndex = 70;
+            this.ngayHocLabel.TabStop = false;
+            this.ngayHocLabel.Text = "Ngày học:";
+            // 
+            // phongHocLabel
+            // 
+            this.phongHocLabel.AutoSize = false;
+            this.phongHocLabel.BackColor = System.Drawing.Color.Transparent;
+            this.phongHocLabel.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phongHocLabel.ForeColor = System.Drawing.Color.Black;
+            this.phongHocLabel.Location = new System.Drawing.Point(2, 303);
+            this.phongHocLabel.Margin = new System.Windows.Forms.Padding(2);
+            this.phongHocLabel.Name = "phongHocLabel";
+            this.phongHocLabel.Size = new System.Drawing.Size(472, 37);
+            this.phongHocLabel.TabIndex = 69;
+            this.phongHocLabel.Text = "Phòng học";
+            // 
             // hocKiLabel
             // 
             this.hocKiLabel.AutoSize = false;
             this.hocKiLabel.BackColor = System.Drawing.Color.Transparent;
             this.hocKiLabel.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hocKiLabel.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.hocKiLabel.Location = new System.Drawing.Point(2, 343);
+=======
+            this.hocKiLabel.Location = new System.Drawing.Point(2, 344);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.hocKiLabel.Margin = new System.Windows.Forms.Padding(2);
             this.hocKiLabel.Name = "hocKiLabel";
             this.hocKiLabel.Size = new System.Drawing.Size(472, 37);
@@ -309,7 +362,11 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Inter SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+<<<<<<< HEAD
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(2, 384);
+=======
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(2, 385);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(472, 29);
@@ -321,17 +378,28 @@
             this.soBuoiDiemDanhLabel.BackColor = System.Drawing.Color.Transparent;
             this.soBuoiDiemDanhLabel.Font = new System.Drawing.Font("Inter", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.soBuoiDiemDanhLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+<<<<<<< HEAD
             this.soBuoiDiemDanhLabel.Location = new System.Drawing.Point(2, 417);
             this.soBuoiDiemDanhLabel.Margin = new System.Windows.Forms.Padding(2);
             this.soBuoiDiemDanhLabel.Name = "soBuoiDiemDanhLabel";
             this.soBuoiDiemDanhLabel.Size = new System.Drawing.Size(193, 27);
+=======
+            this.soBuoiDiemDanhLabel.Location = new System.Drawing.Point(2, 418);
+            this.soBuoiDiemDanhLabel.Margin = new System.Windows.Forms.Padding(2);
+            this.soBuoiDiemDanhLabel.Name = "soBuoiDiemDanhLabel";
+            this.soBuoiDiemDanhLabel.Size = new System.Drawing.Size(193, 28);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.soBuoiDiemDanhLabel.TabIndex = 60;
             this.soBuoiDiemDanhLabel.Text = "Số buổi đã điểm danh:";
             // 
             // panel2
             // 
             this.panel2.AutoSize = true;
+<<<<<<< HEAD
             this.panel2.Location = new System.Drawing.Point(2, 448);
+=======
+            this.panel2.Location = new System.Drawing.Point(2, 450);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(0, 0);
@@ -341,7 +409,11 @@
             // 
             this.panel3.Controls.Add(this.guna2Button2);
             this.panel3.Controls.Add(this.guna2Button1);
+<<<<<<< HEAD
             this.panel3.Location = new System.Drawing.Point(2, 452);
+=======
+            this.panel3.Location = new System.Drawing.Point(2, 454);
+>>>>>>> 0bf7baf976964b5f772a79563617628aea07f0d6
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(476, 39);
@@ -433,7 +505,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1215, 170);
+            this.label3.Location = new System.Drawing.Point(1215, 167);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(23, 13);
@@ -485,6 +557,7 @@
             this.Name = "ClassView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin lớp học";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClassView_FormClosed);
             this.Load += new System.EventHandler(this.ClassView_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();

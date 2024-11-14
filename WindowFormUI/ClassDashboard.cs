@@ -242,5 +242,10 @@ namespace WindowFormUI
                 Application.Exit();
             }
         }
+
+        private void ClassDashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -55,7 +55,6 @@ namespace WindowFormUI
 
         private bool ValidateRegister(object sender, CancelEventArgs e)
         {
-            // if there's no input in the username or email or password, show the message box
             if (guna2TextBox1.Text == "" || guna2TextBox2.Text == "")
             {
                 MessageBox.Show("Please fill in the required fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -63,9 +62,7 @@ namespace WindowFormUI
                 return false;
             }
 
-            // if the username or password is invalid, show the message box
             int count = usersTableAdapter.GetUserByNameAndPassword(guna2TextBox1.Text, Encrypt(guna2TextBox2.Text)).Count();
- 
 
             if (count == 0)
             {

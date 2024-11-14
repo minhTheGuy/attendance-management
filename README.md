@@ -13,9 +13,13 @@ This is a simple attendance management system that allows users to create, read,
 - :computer: **C#** - Programming language 
 - :floppy_disk: **SQL Server** - Database 
 - :art: **Guna UI Framework** - UI Design 
-- :camera: **Face Recognition** - Attendance marking 
+- :camera: **Face Recognition** - Attendance marking and verification
+- :bar_chart: **Chart.js** - Data visualization
 
 ## How to Run the Project :rocket:
 1. **Clone** the repository.
 2. **Open** the project in Visual Studio.
 3. **Run** the project.
+
+# Important Remind: please change the Data Source in the App.config file to your own Data Source connection string.
+```

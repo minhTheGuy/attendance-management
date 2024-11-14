@@ -313,5 +313,10 @@ namespace WindowFormUI
                 Application.Exit();
             }
         }
+
+        private void Home_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

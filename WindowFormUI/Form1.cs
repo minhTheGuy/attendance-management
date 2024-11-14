@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,11 @@ namespace WindowFormUI
             this.attendanceDate = DateTime.Now.ToString("yyyy-MM-dd");
             this.classTableAdapter = new ClassTableAdapter();
             this.studentNames = new HashSet<string>();
+
+            if (!Directory.Exists(Environment.CurrentDirectory + "\\Image"))
+            {
+                Directory.CreateDirectory(Environment.CurrentDirectory + "\\Image");
+            }
         }
         public int ClassId
         {
@@ -140,6 +146,14 @@ namespace WindowFormUI
 
             ClassView classView = new ClassView();
             classView.Show();
+            this.Dispose();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ClassView classView = new ClassView();
+            classView.Show();
+
             this.Dispose();
         }
     }
